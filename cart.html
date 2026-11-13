@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../src/mysheet.css">
+	<title>Spaw Day</title>
+	<style>
+		body {
+			background-color: rgb(255, 255, 255); 
+			color: #000000; 
+			font-family: 'Times New Roman', Times, serif;
+			margin: 20px;
+		}
+		hr {
+			border: 1px solid #2b2216;
+		}
+		table {
+			width: 80%;
+			border-collapse: collapse;
+			background-color: #fffefe; 
+			margin-bottom: 20px;
+		}
+		th, td {
+			border: 1px solid #140c0c;
+			padding: 12px;
+			text-align: left;
+			vertical-align: middle;
+		}
+		th {
+			background-color: #ffffff; 
+		}
+		caption {
+			font-size: 1.5em;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		img.product-img {
+			width: 100px;
+			height: 100px;
+			object-fit: cover;
+			border-radius: 8px;
+			border: 2px solid #f6f5f3;
+		}
+		select, button {
+			background-color: #3E2723;
+			color: #FAF0E6;
+			border: 1px solid #D2B48C;
+			padding: 8px 12px;
+			font-size: 1em;
+			border-radius: 5px;
+			margin-top: 10px;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #d7ccc2;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Spaw Day</h1>
+
+	<hr/>
+	
+	<p>Here is the list of items in your cart</p>
+
+	<table>
+		<caption>Prices</caption>
+		<tr>
+			<th>Image</th>
+			<th>Products</th>
+			<th>Price</th>
+		</tr>
+		<tr>
+			<td>
+                <img class="product-img" src="https://www.rowecasaorganics.com/cdn/shop/files/Shampoo_2_bd28c8f4-0cc4-47c9-9491-d12a0e355e98.jpg?v=1784606959&width=3840" alt="Shampoo">
+			</td>
+			<td>Shampoo</td>
+			<td>30SAR</td>
+		</tr>
+		<tr>
+			<td>
+				<img class="product-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDDbBD3j4TDx_5LbDIRfK5vgL0cYju20HQobDiPU9Mgg&s=10" alt="Dog Bed">
+			</td>
+			<td>
+				Dog bed<br>
+				<ul>
+					<li>Blue</li>
+					<li>Pink</li>
+					<li>Green</li>
+				</ul>
+			</td>
+			<td>250SAR</td>
+		</tr>
+		<tr>
+			<td>
+                                <img class="product-img" src="https://m.media-amazon.com/images/I/71ZClU5LeUL._AC_SL1500_.jpg" alt="Dog Toy">
+
+			</td>
+			<td>Dog Toy<br></td>
+			<td>140SAR</td>
+		</tr>
+		<tr>
+			<td>
+				<img class="product-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsVW8_DJTDrjgG4HVZ6ya7l2_GdRkN5gY34hmHLbLTR_8Y22QrpSo0Mug&s=10" alt="Birthday Groom">
+			</td>
+			<td>Birthday Groom</td>
+			<td>480SAR</td>
+		</tr>
+	</table>
+
+	<label for="Product" style="font-size: 175%">Our most purchased: </label>
+	<select id="Product" name="Product">
+		<option value="Dry Shower">Dry Shower</option>
+		<option value="Quick Haircut">Quick Haircut</option>
+		<option value="Oatmeal Shampoo">Oatmeal Shampoo</option>
+		<option value="Nail Clipping">Nail Clipping</option>
+		<option value="Hair Color">Hair Color</option>
+		<option value="Birthday Groom">Birthday Groom</option>
+	</select>
+	<br>
+	<button type="button" onclick="alert('Thanks for choosing and working with us')">Submit</button>
+
+</body>
+</html>
